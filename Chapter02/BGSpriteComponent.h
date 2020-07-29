@@ -28,7 +28,7 @@ private:
 	// Struct to encapsulate each bg image and its offset
 	struct BGTexture
 	{
-		SDL_Texture* mTexture;
+		SDL_Texture* mTexture = nullptr;
 		Vector2 mOffset;
 	};
 	std::vector<BGTexture> mBGTextures;
